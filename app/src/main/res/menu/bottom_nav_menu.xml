@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/chats"
+        android:icon="@drawable/icon_chat"
+        android:title="Chats" />
+
+    <item
+        android:id="@+id/stories"
+        android:icon="@drawable/ic_selected_stories_icon"
+        android:title="Stories" />
+
+    <item
+        android:id="@+id/groups"
+        android:icon="@drawable/icon_group"
+        android:title="Groups" />
+
+    <item
+        android:id="@+id/contacts"
+        android:icon="@drawable/icon_contact"
+        android:title="Contacts" />
+
+</menu>

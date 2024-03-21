@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "444378708119",
+    "firebase_url": "https://lite-talk-6b5cc-default-rtdb.firebaseio.com",
+    "project_id": "lite-talk-6b5cc",
+    "storage_bucket": "lite-talk-6b5cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:444378708119:android:e430a6f3eefc37ae0411d2",
+        "android_client_info": {
+          "package_name": "com.group_project.chatapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBB2fLzRLYRiQq-e9TxRkJQkc8cirfXL5k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

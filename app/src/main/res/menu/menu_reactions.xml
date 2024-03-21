@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/Bapu"
+        android:icon="@drawable/thumb"
+        android:title=""/>
+    <item android:id="@+id/Thumb"
+        android:icon="@drawable/bapu"
+        android:title="" />
+</menu>

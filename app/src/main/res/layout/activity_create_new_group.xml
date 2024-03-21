@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_backgroud"
+    tools:context=".groupChat.group_list.Create_New_Group_Activity">
+
+    <androidx.appcompat.widget.Toolbar
+        app:theme="@style/ToolbarColoredBackArrow"
+        android:id="@+id/group_chat_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/side_backgroud"
+        app:subtitleTextColor="@color/white"
+        app:titleTextColor="@color/white">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/groupimage"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_below="@id/group_chat_bar_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/camera" />
+
+    <EditText
+        android:id="@+id/group_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/groupimage"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:background="@drawable/edittext_custom_border"
+        android:backgroundTint="@null"
+        android:hint=" Group Title"
+        android:inputType="textCapSentences"
+        android:maxLength="25"
+        android:textColorHint="@color/white"
+        android:padding="@dimen/_10sdp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/group_name"
+        android:layout_gravity="bottom|start"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:text="This will be show on your group"
+        android:textColor="#ffffff"
+        />
+
+    <EditText
+        android:id="@+id/group_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:background="@drawable/edittext_custom_border"
+        android:backgroundTint="@null"
+        android:textColorHint="@color/white"
+        android:hint=" Group Description"
+        android:inputType="textCapSentences|textMultiLine|textLongMessage"
+        android:maxLength="75"
+        android:maxLines="2"
+        android:minLines="1"
+        android:padding="@dimen/_10sdp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/group_desc"
+        android:layout_gravity="bottom|start"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:text="Describe shortly about your group"
+        android:textColor="#808080" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_below="@id/text2"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:backgroundTint="@color/colorPrimary"
+        android:elevation="0dp"
+        android:text="Create"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_18sdp"
+        app:borderWidth="0dp"
+        app:cornerRadius="@dimen/_101sdp"
+        app:elevation="0dp"
+        app:rippleColor="#EFEFEF"
+        app:tint="@color/white" />
+
+</RelativeLayout>

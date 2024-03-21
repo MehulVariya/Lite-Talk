@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_backgroud"
+    tools:context=".stories.Fragment_Stories">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/stories_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/side_backgroud"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_125sdp"
+                        android:layout_height="@dimen/_150sdp"
+                        android:layout_marginHorizontal="@dimen/_8sdp"
+                        android:layout_marginVertical="@dimen/_8sdp"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardCornerRadius="@dimen/_8sdp">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/square_img_upload_story"
+                            android:layout_width="@dimen/_125sdp"
+                            android:layout_height="@dimen/_150sdp"
+                            android:background="@color/black"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/img_default_person"
+                            app:riv_corner_radius="@dimen/_8sdp"
+                            app:riv_mutate_background="true"
+                            app:riv_oval="false" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="@dimen/_125sdp"
+                            android:layout_height="@dimen/_150sdp"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:id="@+id/plus_img"
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
+                                android:layout_margin="4dp"
+                                android:src="@drawable/icon_add_stories_2"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0" />
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignStart="@+id/plus_img"
+                                android:layout_marginTop="85dp"
+                                android:text="Add to story"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="18sp"
+                                android:textStyle="normal|bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.20"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/plus_img"
+                                app:layout_constraintVertical_bias="0.700" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_delete_your_stories"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_75sdp"
+                            android:backgroundTint="@color/main_backgroud"
+                            android:text="Delete your story"
+
+                            android:textAlignment="center"
+                            android:textAllCaps="false"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/_12sdp"
+                            app:borderWidth="0dp"
+                            app:cornerRadius="@dimen/_11sdp"
+                            app:icon="@drawable/icon_delete_stories"
+                            app:iconGravity="textTop"
+                            app:iconSize="@dimen/_21sdp"
+                            app:iconTint="@color/colorPrimary"
+                            app:rippleColor="#dbe2e8" />
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/add_txt_story"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|bottom"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:contentDescription="Text Story"
+                            android:src="@drawable/icon_txt_story"
+                            app:borderWidth="0dp"
+                            app:elevation="3dp"
+                            app:rippleColor="#EFEFEF"
+                            app:tint="@color/white" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/stories_list_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_61sdp" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>

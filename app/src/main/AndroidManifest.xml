@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher_litetalk"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_litetalk_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ChatApplication"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".chatbot.ChatBotActivity"
+            android:exported="false" />
+        <activity
+            android:name=".groupChat.group_chat_messages.Group_Full_Screen_Video_Activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".commonActivities.No_Internet_Check_Activity"
+            android:exported="false"
+            android:theme="@style/Setting_Screen_Theme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".wallPaper.Default_Wallpaper_Preview_Activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".userSettings.Profile_Activity"
+            android:exported="false"
+            android:theme="@style/Setting_Screen_Theme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".singleChat.single_chat_messages.Single_Chat_full_screen_photo_Activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".singleChat.single_chat_messages.Single_Chat_Doc_WebView_Activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".singleChat.single_chat_messages.Single_Chat_Info_Activity"
+            android:exported="false"
+            android:theme="@style/Chat_Info_Theme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".singleChat.single_chat_messages.Single_Chat_Messages_Activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".groupChat.group_chat_messages.Group_Doc_WebView_Activty"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".groupChat.group_chat_messages.Group_full_screen_photo_Activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".groupChat.group_chat_messages.Group_Edit_Activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".groupChat.group_chat_messages.Group_Info_Activity"
+            android:exported="false"
+            android:theme="@style/Chat_Info_Theme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".groupChat.group_list.Create_New_Group_Activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".groupChat.add_participant.Group_Contacts_Activity"
+            android:exported="false"
+            android:theme="@style/Setting_Screen_Theme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".groupChat.group_chat_messages.Group_Chat_Messages_Activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".stories.Story_Preview_Activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".stories.Text_Story_Activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".commonActivities.Image_Preview_Activity"
+            android:exported="false"
+            android:theme="@style/Image_Preview_Theme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".wallPaper.Cropper_Preview_Wallpaper_Activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".contacts.Contact_Show_Activity"
+            android:exported="false"
+            android:theme="@style/Setting_Screen_Theme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".commonActivities.Splash_Screen_Activity"
+            android:exported="true"
+            android:theme="@style/Setting_Screen_Theme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".registration.Profile_Info_Activity"
+            android:exported="false"
+            android:theme="@style/Setting_Screen_Theme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".registration.Register_OTP_Activity"
+            android:exported="false"
+            android:theme="@style/Setting_Screen_Theme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".registration.Registration_Activity"
+            android:exported="false"
+            android:theme="@style/Setting_Screen_Theme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".userSettings.Edit_Profile_Activity"
+            android:exported="false"
+            android:theme="@style/Setting_Screen_Theme">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+    </application>
+
+</manifest>

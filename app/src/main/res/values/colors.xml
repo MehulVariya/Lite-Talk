@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00A884</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="side_backgroud">#1F2C34</color>
+    <color name="main_backgroud">#121B22</color>
+    <!--    for bottom navigation bar    -->
+    <color name="bottom_bar_icon_selected">#00A884</color>
+    <color name="bottom_bar_icon_unselected">#B2B1B1</color>
+
+    <!--    for chat   -->
+    <color name="themecolor">#0076CE</color>
+    <color name="myGreenColor">#009688</color>
+
+
+    <color name="c1">#fe8a8b</color>
+    <color name="c2">#55c265</color>
+    <color name="c3">#25c3dc</color>
+    <color name="c4">#736769</color>
+    <color name="c5">#7e90a4</color>
+    <color name="c6">#5697ff</color>
+    <color name="c7">#6e257e</color>
+    <color name="c8">#243640</color>
+    <color name="c9">#a52c71</color>
+    <color name="c10">#792139</color>
+    <color name="c11">#efb32f</color>
+    <color name="c12">#b6b326</color>
+
+</resources>
