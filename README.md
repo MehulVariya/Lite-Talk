@@ -5,7 +5,7 @@ Chat securely with friends & family. Share stories, photos & videos. Groups, con
 ## ✨ Features:
 
 ### Secure Login :
-__Multi-Factor Authentication:__ Enhance login security with multi-factor authentication. This could involve a combination of password, fingerprint, or one-time PIN for added protection.
+__Multi-Factor Authentication:__ Enhance login security with multi-factor authentication. This could involve a combination of password, or one-time PIN for added protection.
 
 ### Intuitive Interface:
 
@@ -16,7 +16,7 @@ __Profile:__ Personalize your profile with a picture, bio, and status message. M
 ### Seamless Communication:
 
 __Chat:__ Engage in one-on-one messaging with secure end-to-end encryption (optional) for private conversations.<br>
-__Multiple Sharing Options:__ Share various content types - text, photos, videos, location, and files - with individual chats, groups, or contacts.<br>
+__Multiple Sharing Options:__ Share various content types - text, photos, videos, and files - with individual chats, groups, or contacts.<br>
 __Group Chats:__ Create and participate in group chats for collaborative work, discussions, or keeping in touch with large circles.<br>
 __Contacts:__ Organize your contacts with a user-friendly list and search function.<br>
 __Chatbots:__ Interact with helpful chatbots for customer service, information retrieval, or entertainment purposes.<br>
